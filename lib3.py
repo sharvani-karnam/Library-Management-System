@@ -4,10 +4,10 @@ from datetime import datetime
 
 # ---------------- Database Class ----------------
 class Database:
-    def __init__(self, host="localhost", user="root", database="library_management"):
+    def __init__(self, host="localhost", user="root",password="YOUR_PASSWORD",database="library_management"):
         self.host = host
         self.user = user
-        self.password = input("Enter Database Password: ")
+        self.password = password
         self.database = database
         self.conn = None
 
@@ -246,4 +246,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
